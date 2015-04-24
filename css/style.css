@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'lato';
+    src: url('Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('Raleway-Regular.ttf');
+}
+
+body{
+  background-color: #28272E;
+  color: #f9f9f9;
+  font-family: raleway, helvetica, arial;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: lato;
+  font-size: 36pt;
+}
+
+h1 a{
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+h2{
+  margin: 15px 0;
+}
+
+p{
+  line-height: 18pt;
+  margin: 0;
+}
+
+/* botões */
+button{
+  background-color: #C24C44;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #8A2C25;
+  color: #f9f9f9;
+  font-size: 14pt;
+  display: block;
+  margin: 15px auto;
+  padding: 15px 30px;
+}
+
+button:hover{
+  background-color: #8A2C25;
+}
+
+.button-container button{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.final button{
+  background-color: #28272E;
+  box-shadow: 0 2px 0 #121214;
+}
+
+.sim, .nao{
+  font-size: 22pt;
+}
+
+.sim:hover{
+  background-color: #538237;
+}
+
+.nao:hover{
+  background-color: #BA3C3C;
+}
+
+.sim{
+  background-color: #75BA4C;
+  box-shadow: 0 2px 0 #538237;
+}
+
+.nao{
+  background-color: #F54949;
+  box-shadow: 0 2px 0 #BA3C3C;
+}
+
+/* tags */
+img{
+  border-radius: 10px;
+}
+
+header{
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+footer{
+  background-color: #C24C44;
+  bottom: 0;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}
+
+footer p{
+  font-size: 10pt;
+  margin: 0;
+}
+
+main{
+  margin: 50px auto;
+  text-align: center;
+  width: 70%;
+}
+
+main img{
+  margin: 25px;
+}
+
+/* classes */
+.ajuda{
+  text-align: left;
+}
+
+.fotos-escolher img, .escolhido img{
+  margin: 0;
+  width: 125px;
+}
+
+.jogo{
+  display: none;
+}
+
+.escolhido{
+  left: 5%;
+  position: fixed;
+  top: 20%;
+}
+
+.perguntas{
+  background-color: #C24C44;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding: 25px;
+  width: 60%;
+}
+
+.perguntas img{
+  margin: 0;
+}
+
+.prof-escolhido{
+  border: solid 4px #C24C44;
+}
+
+.img-container{
+  text-align: center;
+  width: 100%;
+}
+
+.img-container img{
+  margin: 15px;
+  width: 200px;
+}
+
+.ajuda .button-container{
+  margin-top: 25px;
+}
+
+.final{
+  display: none;
+}
+
+/* media queries para deixar o jogo responsivo */
+@media (max-width: 767px){
+  main { 
+    width: 90%; 
+  }
+  
+  .fotos-escolher img{ 
+    width: 20%; 
+  }
+  
+  .img-container img{
+    width: 40%;
+  }
+
+  .perguntas{
+    margin: 25px auto;
+  }
+  
+  .perguntas img{
+    width: 55%;
+  }
+  
+  h1{
+    font-size: 22pt;
+  }
+  
+  h2{
+    font-size: 16pt;
+  }
+  
+  .bottom-margin{
+    margin-bottom: 78px;
+  }
+  
+  .escolhido{
+    left: 0;
+    position: relative;
+  }
+  
+  .sim, .nao{
+    font-size: 18pt;
+  }
+  
+  .button-container button{
+    margin: 10px auto;
+    margin-right: 0;
+  }
+}
